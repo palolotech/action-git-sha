@@ -1,5 +1,7 @@
 # action-git-sha
 
+NOTE: this code is not included in the application monorepo because accessing actions in the monoorepo requires repo checkout and this code is used to determine which sha of the repo we wish to checkout. placing this code in the repo would required each workflow to perform extra inefficient checkout actions
+
 receive as input a git ref (branch, tag or sha)
 
 ```yaml
